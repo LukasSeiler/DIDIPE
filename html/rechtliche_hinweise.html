@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+    
+<head>
+    <title>DIDIPE Treuhand</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalabel=yes">
+    <meta name="author" content="Lukas Seiler, lukas.seiler@gibmit.ch" />
+    <link href="../css/didipe.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="backgroundimg">
+    </div>
+    <div class="background">
+        <div class="container">
+            <div class="header">
+                <div class="header-content">
+                    <div class="didipe-header">
+                        <!--DIDIPE-Logo im Header-->
+                        <div><img src="../bilder/unformatiert/didipe-logo.gif" class="didipe-logo"></div>
+                    </div>
+                    <div class="text-header">
+                        <!--Text im Header-->
+                        <h2>Partner von Weberhaus</h2>
+                        <h3>Bautreuhand /Generalunternehmung</h3>
+                    </div>
+                    <div class="weberhaus-header">
+                        <!--Weberhauslogo im Header-->
+                        <a href="https://www.weberhaus.ch" target="_blank"><img
+                                src="../bilder/unformatiert/weberhaus-logo-3.png" class="weberhaus-logo"
+                                alt="Weberhaus-Logo" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div id="navigation">
+                    <!--Hier ist die Navigation aufgebaut-->
+                    <input type="checkbox" />
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="nav-inhalt">
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="../html/familienhit.html">Familienhit</a></li>
+                        <li>
+                            <div id="dd-btn" class="dropdown-btn" onclick="ddaction()">Häuserauswahl
+                                <i class="fa-caret-down"></i>
+                            </div>
+                        </li>
+                        <div id="dd-cnt" class="dropdown-container">
+                            <ul class="submenu">
+                                <li><a href="../html/generation5.5.html">Generation 5.5</a></li>
+                                <li><a href="../html/sunshine.html">Sunshine</a></li>
+                                <li><a href="../html/citylife.html">Citylife</a></li>
+                                <li><a href="../html/balance.html">Balance</a></li>
+                                <li><a href="../html/mylife.html">myLife</a></li>
+                            </ul>
+                        </div>
+
+                        <li><a href="../html/freie_architektur.html">Freie Architektur</a></li>
+                        <li><a href="../html/traumvillen.html">Traumvillen</a></li>
+                        <li><a href="../html/unserekeller.html">Unsere Keller</a></li>
+                        <li><a href="../html/aktuelles.html">Aktuelle Projekte</a></li>
+                        <li><a href="../html/kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="main">
+                    <div class="title-datenschutzerklärung">
+                        <!--Hauptbereich Datenschutzerklärung-->
+                        <h1>Datenschutzerklärung</h1>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-content">
+                    <p class="copyright">Copyright © 2019 Lukas Seiler. Alle Rechte vorbehalten.</p>
+                    <div class="footer-aufzählung">
+                        <a href="">Datenschutzerklärung |</a>
+                        <a href="../html/impressum-disclaimer.html"> Impressum / Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function ddaction() {
+            var ddcnt = document.getElementById("dd-cnt");
+            var i;
+
+            if (ddcnt.style.display === "block") {
+                ddcnt.style.display = "none";
+            } else {
+                ddcnt.style.display = "block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

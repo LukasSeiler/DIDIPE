@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head id="head">
+    <title>DIDIPE Treuhand</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" href="./bilder/formatiert/favicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="author" content="Lukas Seiler, lukas.seiler@gibmit.ch" />
+    <meta name="description" content="Hier finden Sie Ihr Traumhaus. Wir bieten Ihnen ein Qualitätshaus zu einem unschlagbaren Preis / Leistungsverhältnis. 
+    Sie wollen ein schlüsselfertiges Haus beziehen? Dann sind Sie bei uns richtig!">
+    <meta name="keyword" content="weberhaus, architekt, didipe, glatthaar, baureihen, schlüsselfertig">
+    <meta name="page-topic" content="Architektur, Häuserbau">
+    <meta name="copywrite" content="Lukas Seiler">
+    <link href="./css/didipe.css" rel="stylesheet">
+    <link href="../css/didipe.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#main").load("./html/indexmain.html");
+
+            $("#index").click(function () {
+
+                $("#main").load("./html/indexmain.html");
+            })
+
+            $("#main").load("./html/familienhitmain.html");
+
+            $("#familienhit").click(function () {
+                $("#main").load("./html/familienhitmain.html", function () {
+                    $("#haus_generation5_5").click(function () {
+                        $("#main").load("./html/generation5.5main.html");
+                    })
+                    $("#haus_sunshine").click(function () {
+                        $("#main").load("./html/sunshinemain.html");
+                    })
+                    $("#haus_citylife").click(function () {
+                        $("#main").load("./html/citylifemain.html");
+                    })
+                    $("#haus_balance").click(function () {
+                        $("#main").load("./html/balancemain.html");
+                    })
+                    $("#haus_mylife").click(function () {
+                        $("#main").load("./html/mylifemain.html");
+                    })
+                });
+            })
+
+            $("#main").load("./html/generation5.5main.html");
+            $("#generation").click(function () {
+
+                $("#main").load("./html/generation5.5main.html");
+
+            })
+
+            $("#main").load("./html/sunshinemain.html");
+            $("#sunshine").click(function () {
+                
+                $("#main").load("./html/sunshinemain.html");
+            })
+
+            $("#main").load("./html/citylifemain.html");
+            $("#citylife").click(function () {
+
+                $("#main").load("./html/citylifemain.html");
+            })
+
+            $("#main").load("./html/balancemain.html");
+            $("#balance").click(function () {
+
+                $("#main").load("./html/balancemain.html");
+            })
+
+            $("#main").load("./html/mylifemain.html");
+            $("#mylife").click(function () {
+
+                $("#main").load("./html/mylifemain.html");
+            })
+
+            $("main").load("./html/freie_architekturmain.html");
+            $("#freie_architektur").click(function () {
+
+                $("#main").load("./html/freie_architekturmain.html");
+            })
+
+            $("main").load("./html/traumvillenmain.html");
+            $("#traumvillen").click(function () {
+
+                $("#main").load("./html/traumvillenmain.html");
+            })
+
+            $("main").load("./html/unserekellermain.html");
+            $("#unserekeller").click(function () {
+
+                $("#main").load("./html/unserekellermain.html");
+            })
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="backgroundimg">
+    </div>
+    <div class="background">
+        <div class="container">
+            <div class="header">
+                <div class="header-content">
+                    <div class="didipe-header">
+                        <!--DIDIPE-Logo im Header-->
+                        <div>
+                            <img src="./bilder/formatiert/didipe-logo.gif" class="didipe-logo" alt="DIDIPE-Logo">
+                        </div>
+                    </div>
+                    <div class="text-header">
+                        <!--Text im Header-->
+                        <h2>Partner von Weberhaus</h2>
+                        <h3>Bautreuhand /Generalunternehmung</h3>
+                    </div>
+                    <div class="weberhaus-header">
+                        <!--Weberhauslogo im Header-->
+                        <a href="https://www.weberhaus.ch" target="_blank"><img
+                                src="./bilder/formatiert/weberhaus-logo-3.png" class="weberhaus-logo"
+                                alt="Weberhaus-Logo" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div id="navigation">
+                    <!--Hier ist die Navigation aufgebaut-->
+                    <input type="checkbox" />
+                    <!--Burger-->
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="nav-inhalt">
+                        <li id="index" onclick="ddscrolltop()"></a>Home</li>
+                        <li id="familienhit" onclick="ddscrolltop()">Familienhit</a></li>
+                        <li>
+                            <div id="dd-btn" class="dropdown-btn" onclick="ddaction()">Häuserauswahl
+                                <i class="fa-caret-down"></i>
+                            </div>
+                        </li>
+                        <div class="dropdown-container">
+                            <ul id="dd-cnt" class="submenu">
+                                <li id="generation" onclick="ddscrolltop()">Generation 5.5</a></li>
+                                <li id="sunshine" onclick="ddscrolltop()">Sunshine</a></li>
+                                <li id="citylife" onclick="ddscrolltop()">Citylife</a></li>
+                                <li id="balance" onclick="ddscrolltop()">Balance</a></li>
+                                <li id="mylife" onclick="ddscrolltop()">myLife</a></li>
+                            </ul>
+                        </div>
+
+                        <li id="freie_architektur" onclick="ddscrolltop()">Freie Architektur</a></li>
+                        <li id="traumvillen" onclick="ddscrolltop()">Traumvillen</a></li>
+                        <li id="unserekeller" onclick="ddscrolltop()">Unsere Keller</a></li>
+                        <li id="aktuelles" onclick="ddscrolltop()">Aktuelle Projekte</a></li>
+                        <li id="kontakt" onclick="ddscrolltop()">Kontakt</a></li>
+                        <li><button onclick="window.location.href = './html/indexdark.html';"
+                                class="darkmode-button">Switch to Dark Mode</button></li>
+                    </ul>
+                </div>
+
+                <div id="main" class="main">
+
+                </div>
+            </div>
+
+            <div class="footer">
+                <!--Hier ist die Fusszeile aufgebaut-->
+                <div class="footer-content">
+                    <p class="copyright">Copyright © 2019 Lukas Seiler. Alle Rechte vorbehalten.</p>
+                    <div class="footer-aufzaehlung">
+                        <a href="../html/datenschutzerklärung.html">Datenschutzerklärung |</a>
+                        <a href="../html/impressum-disclaimer.html"> Impressum / Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Javascript-->
+    <script>
+        function ddaction() {
+            var ddcnt = document.getElementById("dd-cnt");
+            var i;
+
+            if (ddcnt.style.display === "block") {
+                ddcnt.style.display = "none";
+            } else {
+                ddcnt.style.display = "block";
+            }
+        }
+        function ddscrolltop(){
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+
+</body>
+
+</html>
