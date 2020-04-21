@@ -57,7 +57,7 @@
 
             $("#main").load("./html/sunshinemain.html");
             $("#sunshine").click(function () {
-                
+
                 $("#main").load("./html/sunshinemain.html");
             })
 
@@ -101,6 +101,12 @@
             $("#aktuelles").click(function () {
 
                 $("#main").load("./html/aktuellesmain.html");
+            })
+
+            $("main").load("./html/kontaktmain.html");
+            $("#kontakt").click(function () {
+
+                $("#main").load("./html/kontaktmain.html");
             })
 
         });
@@ -168,8 +174,6 @@
                         <li id="unserekeller" onclick="ddscrolltop()">Unsere Keller</a></li>
                         <li id="aktuelles" onclick="ddscrolltop()">Aktuelle Projekte</a></li>
                         <li id="kontakt" onclick="ddscrolltop()">Kontakt</a></li>
-                        <li><button onclick="window.location.href = './html/indexdark.html';"
-                                class="darkmode-button">Switch to Dark Mode</button></li>
                     </ul>
                 </div>
 
@@ -202,7 +206,7 @@
                 ddcnt.style.display = "block";
             }
         }
-        function ddscrolltop(){
+        function ddscrolltop() {
             window.scrollTo(0, 0);
         }
     </script>

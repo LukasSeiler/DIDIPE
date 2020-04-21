@@ -189,7 +189,7 @@ html, body {
     width: 100%;
     padding: 20px;
     padding-left: 20px;
-    height: fit-content; /* Die Höhe passt sich dem Inhalt an */
+    height: auto; /* Die Höhe passt sich dem Inhalt an */
     overflow: auto;
 }
 .maindark {
@@ -237,9 +237,9 @@ html, body {
     font-size: 20px;
     font-weight: 700;
     text-align: center; /* Der Text wird zentriert angezeigt */
-    background-color: silver; /* Die Hintergrundfarbe des Textes ist silbrig */
-    color: blue; /* Die Schriftfarbe ist blau */
-    text-decoration: underline;
+   /* background-color: silver;*/ /* Die Hintergrundfarbe des Textes ist silbrig */
+    color: black; /* Die Schriftfarbe ist blau */
+    text-decoration: none;
 }
 .haus-textdark{
     width: 100%;
@@ -283,6 +283,7 @@ html, body {
     max-width: 50%; 
     display: inline-block; /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
     margin-left: -10px;
+
 }
 .citylife img{
     width: 100%;
@@ -680,21 +681,17 @@ table, th,td {
     }
     .text-header{
         padding-top: 30px;
-        font-size: 12px;
+        font-size: 14px;
         margin-left: 20px;
     }
     .weberhaus-logo{
-        height: 90px;
+        height: 100px;
         max-width: 99%;
         margin-right: 30px;
         padding-top: 40px;
     }
     /*Logogrösse wird verändert*/
-    .didipe-logo{
-        height: 90px;
-        width: 100%;
-        padding-top: 40px;
-    }
+
 /* ---------------------------------------------------Hamburger-Ende-----------------------------------------------------------*/
 }
 /* Bei einer Bildschirmbreite von maximal 376px werden folgende Änderungen getätigt */
@@ -741,15 +738,23 @@ table, th,td {
     }
     .text-header{
         padding-top: 30px;
-        font-size: 12px;
+        font-size: 10px;
         margin-left: 20px;
     }
      /*Logogrösse wird verändert*/
      .didipe-logo{
-        height: 75px;
+        height: 60px;
+        padding-top: 40px;
+    }
+    .didipe-header{
+        width: 100px;
     }
     .weberhaus-logo{
-        margin-left: -10px;
+        margin-left: -5px;
+        width: 100px;
+    }
+    .haus-text{
+        font-size: 12px;
     }
     .anforderung{
         margin-left: -10px;
@@ -1220,4 +1225,7 @@ table, th,td {
 .darkmode-button{
     margin-left: 40px;
     background-color: white;
+}
+.list-actuell{
+    list-style: none;
 }
