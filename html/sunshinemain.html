@@ -42,6 +42,9 @@
             <img src="./bilder/formatiert/sunshine/220-sunshine-og.jpg" class="_80plan2" alt="Hausplan Sunshine 220">
         </div>
     </div>
+    <button class="back-to-top-button" id="back-to-top">
+        Zurück nach oben
+    </button>
     <hr class="trennlinie" />
     <!--Trennlinie-->
     <div class="content_generation">
@@ -64,7 +67,7 @@
             <img src="./bilder/formatiert/sunshine/310-sunshine-og.jpg" class="_80plan2" alt="Hausplan Sunshine 310">
         </div>
     </div>
-    <button class="back-to-top-button" id="back-to-top">
+    <button class="back-to-top-button" id="back-to-top1">
         Zurück nach oben
     </button>
     <!--Javascript-->
@@ -88,14 +91,23 @@
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 100) {
                     $('#back-to-top').fadeIn();
+                    $('#back-to-top1').fadeIn();
                 } else {
                     $('#back-to-top').fadeOut();
+                    $('#back-to-top1').fadeOut();
                 }
             });
 
             //Click event scroll to top button jquery
 
             $('#back-to-top').click(function() {
+
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+            $('#back-to-top1').click(function() {
 
                 $('html, body').animate({
                     scrollTop: 0
