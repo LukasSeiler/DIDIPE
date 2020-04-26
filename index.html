@@ -109,9 +109,20 @@
                 $("#main").load("./html/kontaktmain.html");
             })
 
-        });
+            $("main").load("./html/impressum-disclaimermain.html");
+            $("#impressum-disclaimer").click(function () {
 
-    </script>
+                $("#main").load("./html/impressum-disclaimermain.html");
+            })
+
+            $("main").load("./html/datenschutzerklärungmain.html");
+            $("#datenschutzerklärung").click(function () {
+
+                $("#main").load("./html/datenschutzerklärungmain.html");
+            })
+
+        });
+</script>
 </head>
 
 <body>
@@ -187,8 +198,8 @@
                 <div class="footer-content">
                     <p class="copyright">Copyright © 2019 Lukas Seiler. Alle Rechte vorbehalten.</p>
                     <div class="footer-aufzaehlung">
-                        <a href="../html/datenschutzerklärung.html">Datenschutzerklärung |</a>
-                        <a href="../html/impressum-disclaimer.html"> Impressum / Disclaimer</a>
+                        <a id="datenschutzerklärung" onclick="ddscrolltop()">Datenschutzerklärung |</a>
+                        <a id="impressum-disclaimer" onclick="ddscrolltop()"> Impressum / Disclaimer</a>
                     </div>
                 </div>
             </div>

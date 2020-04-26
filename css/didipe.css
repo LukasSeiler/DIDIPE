@@ -1,144 +1,152 @@
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
-    padding: 0; /* Kein Padding */
-    margin: 0; /* Kein Margin */
+    padding: 0;
+    /* Kein Padding */
+    margin: 0;
+    /* Kein Margin */
 }
-.backgroundimg{
+
+.backgroundimg {
     display: block;
-    background-image: url("../bilder/formatiert/frühling.jpg");/*Hintergrundbild Frühling*/
+    background-image: url("../bilder/formatiert/frühling.jpg");
+    /*Hintergrundbild Frühling*/
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: -1;
 }
-.backgroundimgdark{
-    display: block;
-    background-image: url("../bilder/formatiert/frühlingdark.jpg");/*Hintergrundbild Frühling*/
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-}
+
+
 /*Hintergrund hat volle Grösse*/
-.background{
+
+.background {
     display: block;
     width: 100%;
-    height: fit-content;/*Die Höhe passt sich der Länge der Website an*/
+    height: fit-content;
+    /*Die Höhe passt sich der Länge der Website an*/
 }
+
+
 /*Feld, wo der ganze Inhalt drin steht*/
+
 .container {
     width: 80%;
-    margin-left: auto; /*Damit der Container automatisch zentriert wird*/
-    margin-right: auto;/*Damit der Container automatisch zentriert wird*/
+    margin-left: auto;
+    /*Damit der Container automatisch zentriert wird*/
+    margin-right: auto;
+    /*Damit der Container automatisch zentriert wird*/
     height: 100%;
-    display: flex; /* Flexible Box für responsive Webdesigne wird erstellt */
-    flex-direction: column; /* Flex-Direction = Horizontal */
+    display: flex;
+    /* Flexible Box für responsive Webdesigne wird erstellt */
+    flex-direction: column;
+    /* Flex-Direction = Horizontal */
 }
-.header{
-    background-image: url("../bilder/formatiert/hintergrund2.jpg"); /*Hitergrundbild der Kopfzeile*/
+
+.header {
+    background-image: url("../bilder/formatiert/hintergrund2.jpg");
+    /*Hitergrundbild der Kopfzeile*/
     width: 100%;
     height: 180px;
 }
-.headerdark{
-    background-image: url("../bilder/formatiert/darksky.jpg"); /*Hitergrundbild der Kopfzeile*/
-    width: 100%;
-    height: 180px;
-}
+
+
 /*Der Inhalt des Headers*/
+
 .header-content {
     width: 100%;
     padding: 10px;
-    display: flex; /* Flexible Box für responsive Webdesigne wird erstellt */
+    display: flex;
+    /* Flexible Box für responsive Webdesigne wird erstellt */
     justify-content: space-around;
-    flex-direction: row; /* Flex-Direction = Horizontal */
+    flex-direction: row;
+    /* Flex-Direction = Horizontal */
 }
+
+
 /*Logo in der Kopfzeile*/
-.didipe-logo{
+
+.didipe-logo {
     height: 150px;
-    max-width:100%
+    max-width: 100%
 }
+
+
 /*Logo in der Kopfzeile*/
-.weberhaus-logo{
+
+.weberhaus-logo {
     height: 120px;
     max-width: 100%;
 }
+
+
 /*Text im Header*/
-.text-header{
-    text-align: center;/*Der Text soll zentriert sein*/
+
+.text-header {
+    text-align: center;
+    /*Der Text soll zentriert sein*/
 }
-.text-headerdark{
-    text-align: center;/*Der Text soll zentriert sein*/
-    color: lightgrey;
-}
+
 .content {
-    display: flex; /* Flexible Box für responsive Webdesigne wird erstellt */
+    display: flex;
+    /* Flexible Box für responsive Webdesigne wird erstellt */
     width: 100%;
     height: 150%;
 }
-#navigation{
-    background-color: lightblue;/*Hitergrundfarbe der Navigation*/
-    height: auto;/*Die Höhe soll sich dem Inhalt anpassen*/
-    z-index: 1;
-}
-#navigationdark{
-    background-color: rgb(38, 31, 80) ;/*Hitergrundfarbe der Navigation*/
-    height: fit-content;/*Die Höhe soll sich dem Inhalt anpassen*/
+
+#navigation {
+    background-color: lightblue;
+    /*Hitergrundfarbe der Navigation*/
+    height: auto;
+    /*Die Höhe soll sich dem Inhalt anpassen*/
     z-index: 1;
 }
 
+
 /* alle Listenelemente in der Navigaion */
+
 #navigation li {
-    list-style: none; /*Keine Symbole bei der Aufzählung*/
+    list-style: none;
+    /*Keine Symbole bei der Aufzählung*/
     padding-left: 20px;
     width: 200px;
-    height: 60px; /* height und line-height gleich: Schrift horizontal zentriert */
+    height: 60px;
+    /* height und line-height gleich: Schrift horizontal zentriert */
     line-height: 60px;
 }
-#navigationdark li {
-    list-style: none; /*Keine Symbole bei der Aufzählung*/
-    padding-left: 20px;
-    width: 200px;
-    height: 60px; /* height und line-height gleich: Schrift horizontal zentriert */
-    line-height: 60px;
-}
-.dropdown-container{
+
+.dropdown-container {
     display: block;
     background-color: transparent;
     padding-left: 0px;
 }
-.dropdowndark{
-    color: lightgrey;
-}
+
+
 /* alle Linkelemente */
+
 #navigation a {
-    text-decoration: none; /* nicht unterstrichen */
-    color: black; /* schwarze Schrift */
-
+    text-decoration: none;
+    /* nicht unterstrichen */
+    color: black;
+    /* schwarze Schrift */
     display: block;
     border: none;
     background: none;
     cursor: pointer;
     outline: none;
 }
-#navigationdark a {
-    text-decoration: none; /* nicht unterstrichen */
-    color: lightgrey; /* schwarze Schrift */
 
-    display: block;
-    border: none;
-    background: none;
-    cursor: pointer;
-    outline: none;
-}
 .submenu {
-    margin: 0;  
+    margin: 0;
     padding: 0;
     font-size: 12pt;
 }
+
 .submenu li {
     width: 200px!important;
-    height: 38px!important; /* height und line-height gleich: Schrift horizontal zentriert */
+    height: 38px!important;
+    /* height und line-height gleich: Schrift horizontal zentriert */
     line-height: 38px!important;
 }
 
@@ -146,355 +154,404 @@ html, body {
     display: none;
 }
 
+
 /* Listenelemente hover*/
-#navigation li:hover, .dropdown-btn:hover {
-    background-color:grey; /* grau beim drüberfahren */
+
+#navigation li:hover,
+.dropdown-btn:hover {
+    background-color: grey;
+    /* grau beim drüberfahren */
 }
-#navigationdark li:hover, .dropdown-btn:hover {
-    background-color:grey; /* grau beim drüberfahren */
-}
+
+
 /* Untermenues werden standardmässig nicht angezeigt */
+
 #navigation li ul {
     position: initial;
 }
-#navigationdark li ul {
-    position: initial;
-}
- /* verschachtelte Listenelemente verhalten sich als Block */
+
+
+/* verschachtelte Listenelemente verhalten sich als Block */
+
 #navigation li ul li {
     display: block;
     background-color: #e0ffff;
     margin-left: 90%;
 }
-#navigationdark li ul li {
-    display: block;
-    background-color: #473C8B ;
-    margin-left: 90%;
-}
+
 .title {
     color: #000033;
     padding-left: 50px;
-    width: fit-content; /* Die Breite passt sich der verfügbaren Breite an */
-    text-decoration: underline; /* Der Titel wird unterstrichen */
+    width: fit-content;
+    /* Die Breite passt sich der verfügbaren Breite an */
+    text-decoration: underline;
+    /* Der Titel wird unterstrichen */
 }
-.titledark {
-    color: white;
-    padding-left: 50px;
-    width: fit-content; /* Die Breite passt sich der verfügbaren Breite an */
-    text-decoration: underline; /* Der Titel wird unterstrichen */
-}
+
+
 /* Hauptbereich */
+
 .main {
-    background-color: white; /* Die Hintergrundfarbe ist weiss */
+    background-color: white;
+    /* Die Hintergrundfarbe ist weiss */
     width: 100%;
     padding: 20px;
     padding-left: 20px;
-    height: auto; /* Die Höhe passt sich dem Inhalt an */
+    height: auto;
+    /* Die Höhe passt sich dem Inhalt an */
     overflow: auto;
 }
-.maindark {
-    color: white;
-    background-color: #292929; /* Die Hintergrundfarbe ist weiss */
-    width: 100%;
-    padding: 20px;
-    padding-left: 20px;
-    height: fit-content; /* Die Höhe passt sich dem Inhalt an */
-    overflow: auto;
-}
-.villa1{
+
+.villa1 {
     width: 95%;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
 }
-.anforderung{
-    list-style: square; /* Die Auflistung soll ein Quadrat als Listen-Style haben */
+
+.anforderung {
+    list-style: square;
+    /* Die Auflistung soll ein Quadrat als Listen-Style haben */
 }
+
+
 /* Der ganze Text */
-*{
-    font-family: Arial, Helvetica, sans-serif; /* Schriftart */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Schriftart */
 }
-.title-baureihen, .title-freie_architektur, .title-traumvillen, .title-aktuelles, .title-kontakt, .title-keller, .title-generation, .title-sunshine, .title-citylife, .title-balance, .title-mylife{
+
+.title-baureihen,
+.title-freie_architektur,
+.title-traumvillen,
+.title-aktuelles,
+.title-kontakt,
+.title-keller,
+.title-generation,
+.title-sunshine,
+.title-citylife,
+.title-balance,
+.title-mylife {
     color: #000033;
     width: 100%;
-    text-align: center; /* Der Text wird zentriert angezeigt */
+    text-align: center;
+    /* Der Text wird zentriert angezeigt */
     padding-bottom: 20px;
-    text-decoration: underline; /*Titel wird unterstrichen */
+    text-decoration: underline;
+    /*Titel wird unterstrichen */
 }
-.title-baureihendark, .title-freie_architekturdark, .title-traumvillendark, .title-aktuellesdark, .title-kontaktdark, .title-kellerdark, .title-generationdark, .title-sunshinedark, .title-citylifedark, .title-balancedark, .title-mylifedark{
-    color: white;
-    width: 100%;
-    text-align: center; /* Der Text wird zentriert angezeigt */
-    padding-bottom: 20px;
-    text-decoration: underline; /*Titel wird unterstrichen */
-}
-.baureihen{
+
+.baureihen {
     width: 100%;
 }
-.haus-text{
+
+.haus-text {
     width: 100%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst */
     font-size: 20px;
     font-weight: 700;
-    text-align: center; /* Der Text wird zentriert angezeigt */
-   /* background-color: silver;*/ /* Die Hintergrundfarbe des Textes ist silbrig */
-    color: black; /* Die Schriftfarbe ist blau */
+    text-align: center;
+    /* Der Text wird zentriert angezeigt */
+    /* background-color: silver;*/
+    /* Die Hintergrundfarbe des Textes ist silbrig */
+    color: black;
+    /* Die Schriftfarbe ist blau */
     text-decoration: none;
 }
-.haus-textdark{
-    width: 100%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center; /* Der Text wird zentriert angezeigt */
-    background-color: rgb(76, 68, 68); /* Die Hintergrundfarbe des Textes ist silbrig */
-    color: lightblue; /* Die Schriftfarbe ist blau */
-    text-decoration: underline;
-}
-.baureihen-content, .freie_architektur-content, .traumvillen-content{
-    text-align: center; /* Der Text wird zentriert angezeigt */
+
+.baureihen-content,
+.freie_architektur-content,
+.traumvillen-content {
+    text-align: center;
+    /* Der Text wird zentriert angezeigt */
     width: 100%;
 }
-.baureihen-contentdark, .freie_architektur-contentdark, .traumvillen-contentdark{
-    color: white;
-    text-align: center; /* Der Text wird zentriert angezeigt */
-    width: 100%;
-}
+
 .generation {
-    max-width: 50%; 
-    display: inline-block; /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
+    max-width: 50%;
+    display: inline-block;
+    /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
     margin-left: -10px;
 }
+
 .generation img {
     width: 100%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst */
     padding-top: 50px;
 }
+
 .sunshine {
-    max-width: 50%; 
+    max-width: 50%;
     float: right;
 }
+
 .sunshine img {
     width: 100%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst */
     padding-top: 50px;
 }
-.citylife {
-    max-width: 50%; 
-    display: inline-block; /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
-    margin-left: -10px;
 
+.citylife {
+    max-width: 50%;
+    display: inline-block;
+    /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
+    margin-left: -10px;
 }
-.citylife img{
+
+.citylife img {
     width: 100%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
-    display: inline-block; /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst */
+    display: inline-block;
+    /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
     padding-left: 0;
     margin-left: 0;
     padding-top: 50px;
 }
+
 .balance {
-    max-width: 50%; 
-    float: right; /* Das Element wird rechts angeordnet */
+    max-width: 50%;
+    float: right;
+    /* Das Element wird rechts angeordnet */
 }
-.balance img{
+
+.balance img {
     width: 100%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst */
     padding: 0px;
     margin: 0px;
     padding-top: 50px;
 }
+
 .mylife {
-    max-width: 60%; 
-    display: inline-block; /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
+    max-width: 60%;
+    display: inline-block;
+    /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
     margin-left: 20%;
 }
-.mylife img{
+
+.mylife img {
     width: 100%;
     padding-top: 50px;
 }
-.footer{
+
+.footer {
     display: block;
-    background-color: lightgrey; /* Die Hintergrundfarbe ist hellgrau */
+    background-color: lightgrey;
+    /* Die Hintergrundfarbe ist hellgrau */
     padding-top: 0px;
     margin: 0px;
     height: 10%;
 }
-.footerdark{
-    display: block;
-    background-color: rgb(94, 88, 88); /* Die Hintergrundfarbe ist hellgrau */
-    padding-top: 0px;
-    margin: 0px;
-    height: 10%;
-}
-.copyright{
-    font-size: 17px; /* Die Schriftgrösse beträgt 17px */
+
+.copyright {
+    font-size: 17px;
+    /* Die Schriftgrösse beträgt 17px */
     color: black;
-    opacity: 0.8; /* Die Transparez der Schrift beträgt 0.8 */
+    opacity: 0.8;
+    /* Die Transparez der Schrift beträgt 0.8 */
     width: 100%;
-    text-align: center; /* Der Text soll zentriert werden */
+    text-align: center;
+    /* Der Text soll zentriert werden */
     padding-top: 5%;
 }
-.footer-aufzaehlung{
+
+.footer-aufzaehlung {
     width: 100%;
-    text-align: center; /* Der Text soll zentriert werden */
-    font-size: 18px; /* Die Schriftgrösse beträgt 18px */
+    text-align: center;
+    /* Der Text soll zentriert werden */
+    font-size: 18px;
+    /* Die Schriftgrösse beträgt 18px */
     padding-bottom: 5%;
 }
-.footer-aufzaehlung a{
+
+.footer-aufzaehlung a {
     color: black;
-    text-decoration: none; /* Es soll nicht unterstrichen sein */
+    text-decoration: none;
+    /* Es soll nicht unterstrichen sein */
 }
-.villa-1, .villa-3{
+
+.villa-1,
+.villa-3 {
     width: 47%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst */
     margin-left: 1%;
     padding-top: 50px;
 }
-.villa-2, .villa-5{
-    float: right; /* Das Bild soll rechts angeordnet werden */
+
+.villa-2,
+.villa-5 {
+    float: right;
+    /* Das Bild soll rechts angeordnet werden */
     width: 47%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst */
     margin-right: 1%;
     padding-top: 50px;
 }
-.villa-4{
-    max-width: 55%; 
-    display: inline-block; /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
+
+.villa-4 {
+    max-width: 55%;
+    display: inline-block;
+    /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
     margin-left: 23%;
     padding-top: 50px;
 }
-.f-architektur-1, .f-architektur-3, .f-architektur-5{
+
+.f-architektur-1,
+.f-architektur-3,
+.f-architektur-5 {
     width: 47%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst */
     margin-left: 1%;
     padding-top: 50px;
 }
-.f-architektur-2, .f-architektur-4, .f-architektur-6{
-    float: right; /* Das Bild wird rechts angeordnet */
+
+.f-architektur-2,
+.f-architektur-4,
+.f-architektur-6 {
+    float: right;
+    /* Das Bild wird rechts angeordnet */
     width: 47%;
-    height: auto; /* Die Höhe wird automatisch angepasst */
+    height: auto;
+    /* Die Höhe wird automatisch angepasst */
     margin-right: 1%;
     padding-top: 50px;
 }
-.kontakt-content{
-    text-align: center; /* Der Text soll zentriert werden */
-}
-.kontakt1{
-    font-weight: 700; /* Die Schriftdicke beträgt 700 */
-}
-.kontakt-bild{
-    width: 100%;
-    margin-right: auto; /* Das Bild wird zentriert */
-    margin-left: auto;  /* Das Bild wird zentriert */
-}
-.didipe-logo-2{
-    width: 20%;
 
+.kontakt-content {
+    text-align: center;
+    /* Der Text soll zentriert werden */
 }
-.untertitle-generation, .untertitle-citylife{
+
+.kontakt1 {
+    font-weight: 700;
+    /* Die Schriftdicke beträgt 700 */
+}
+
+.kontakt-bild {
     width: 100%;
-    text-align: center; /* Der Text soll zentriert werden */
+    margin-right: auto;
+    /* Das Bild wird zentriert */
+    margin-left: auto;
+    /* Das Bild wird zentriert */
 }
-.untertitle-generation-2, .untertitle-citylife-2{
+
+.didipe-logo-2 {
+    width: 20%;
+}
+
+.untertitle-generation,
+.untertitle-citylife {
+    width: 100%;
+    text-align: center;
+    /* Der Text soll zentriert werden */
+}
+
+.untertitle-generation-2,
+.untertitle-citylife-2 {
     width: 100%;
     text-align: center;
 }
-table, th,td {
-    border: 1px solid black; /* Rahmen der Tabelle */
-    border-collapse: separate; /* Jede Zelle besitzt ihren eigenen Rahmen */
-    border-spacing: 2px; /* Abstand zwischen den Rahmen der Zellen */
-    text-align: center; /* Der Text in der Tabelle soll zentriert werden */
+
+table,
+th,
+td {
+    border: 1px solid black;
+    /* Rahmen der Tabelle */
+    border-collapse: separate;
+    /* Jede Zelle besitzt ihren eigenen Rahmen */
+    border-spacing: 2px;
+    /* Abstand zwischen den Rahmen der Zellen */
+    text-align: center;
+    /* Der Text in der Tabelle soll zentriert werden */
 }
-.tabelle-generation, .tabelle-citylife{
+
+.tabelle-generation,
+.tabelle-citylife {
     width: 100%;
-    border-radius: 5px; /* Die Ecken werden abgerundet */
+    border-radius: 5px;
+    /* Die Ecken werden abgerundet */
 }
-.tabelle-generationdark, .tabelle-citylifedark{
-    width: 100%;
-    border-radius: 5px; /* Die Ecken werden abgerundet */
-    border-color: lightgrey;
+
+.g1 {
+    color: white;
+    /* Die Schriftfarbe ist weiss */
+    background-color: blue;
+    /* Die Hintergrundfarbe ist blau */
+    font-weight: 700;
+    /* Die Schriftdicke beträgt 700 */
 }
-.g1{
-    color: white; /* Die Schriftfarbe ist weiss */
-    background-color: blue; /* Die Hintergrundfarbe ist blau */
-    font-weight: 700; /* Die Schriftdicke beträgt 700 */
+
+.g1 a {
+    color: white;
+    /* Die Schriftfarbe ist weiss */
+    font-weight: 400;
+    /* Die Schriftdicke beträgt 400 */
+    background-color: blue;
+    /* Die Hintergrundfarbe von .g1 und .g1 a ist blau */
 }
-.g1 a{
-    color: white; /* Die Schriftfarbe ist weiss */
-    font-weight: 400; /* Die Schriftdicke beträgt 400 */
-    background-color: blue; /* Die Hintergrundfarbe von .g1 und .g1 a ist blau */
-}
-.g1dark{
-    color: white; /* Die Schriftfarbe ist weiss */
-    background-color: rgb(94, 71, 241) ; /* Die Hintergrundfarbe ist blau */
-    font-weight: 700; /* Die Schriftdicke beträgt 700 */
-}
-.g1dark a{
-    color: white; /* Die Schriftfarbe ist weiss */
-    font-weight: 400; /* Die Schriftdicke beträgt 400 */
-    background-color: rgb(94, 71, 241) ; /* Die Hintergrundfarbe von .g1 und .g1 a ist blau */
-}
-.g2{
-    color: black; /* Die Schriftfarbe ist weiss */
-    font-weight: 400; /* Die Schriftdicke beträgt 400 */
+
+.g2 {
+    color: black;
+    /* Die Schriftfarbe ist weiss */
+    font-weight: 400;
+    /* Die Schriftdicke beträgt 400 */
     width: 100%;
     text-align: center;
     padding-top: 20px;
 }
-.g2dark{
-    color: white; /* Die Schriftfarbe ist weiss */
-    font-weight: 400; /* Die Schriftdicke beträgt 400 */
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
+
+#navigation input {
+    opacity: 0;
 }
-#navigation input{
-    opacity: 0; 
-}
-#navigationdark input{
-    opacity: 0; 
-}
+
+
 /* Bei einer Bildschirmbreite von maximal 800px werden folgende Änderungen getätigt */
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 800px) {
     .container {
         width: 100%;
         height: 100%;
-        display: flex; /* Flexible Box für responsive Webdesigne wird erstellt */
-        flex-direction: column; /* Flex-Direction = Horizontal */
+        display: flex;
+        /* Flexible Box für responsive Webdesigne wird erstellt */
+        flex-direction: column;
+        /* Flex-Direction = Horizontal */
     }
     /*Bilder werden bei 600px Bildschirmbreite untereinander angeordnet*/
-    .villa-1, .villa-2, .villa-3, .villa-5, .f-architektur-1, .f-architektur-3, .f-architektur-5, .f-architektur-2, .f-architektur-6, .f-architektur-4{
+    .villa-1,
+    .villa-2,
+    .villa-3,
+    .villa-5,
+    .f-architektur-1,
+    .f-architektur-3,
+    .f-architektur-5,
+    .f-architektur-2,
+    .f-architektur-6,
+    .f-architektur-4 {
         display: block;
         margin-right: 1px;
         width: 100%;
-        float: left; /* Der Inhalt ordnet sich links an */
+        float: left;
+        /* Der Inhalt ordnet sich links an */
     }
-    .villa-4{
-        max-width: 100%; 
+    .villa-4 {
+        max-width: 100%;
         width: 100%;
         margin-right: 1px;
         margin-left: 1px;
-        float: left; /* Der Inhalt ordnet sich links an */
+        float: left;
+        /* Der Inhalt ordnet sich links an */
     }
     /* ---------------------------------------------------Hamburger-Anfang-----------------------------------------------------------*/
-    #navigation{
-        display: block;
-        float: left;
-        /*Position wird fixiert*/
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        background-color: transparent;
-        /*Background wird auf weiss gestellt*/
-        /*background-color: white;*/
-        /*Hellblauebox wird ein bisschen transparent*/
-        opacity: 0.95;
-        z-index: 1;
-        -webkit-user-select: none;
-        user-select: none;
-    }
-    #navigationdark{
+    #navigation {
         display: block;
         float: left;
         /*Position wird fixiert*/
@@ -511,36 +568,28 @@ table, th,td {
         user-select: none;
     }
     .submenu {
-        margin: 0;  
+        margin: 0;
         padding: 0;
         font-size: 12pt;
     }
     .submenu li {
         width: 200px!important;
-        height: 38px!important; /* height und line-height gleich: Schrift horizontal zentriert */
+        height: 38px!important;
+        /* height und line-height gleich: Schrift horizontal zentriert */
         line-height: 38px!important;
     }
-    
     #dd-cnt {
         display: none;
     }
-    #navigation a{
+    #navigation a {
         text-decoration: none;
         color: #232323;
     }
-    #navigation li:hover{
+    #navigation li:hover {
         /*Textfarbe wird bestimmt, welche erscheint, wenn der Mauszeiger auf dem Text ist*/
         background-color: gray;
     }
-    #navigationdark a{
-        text-decoration: none;
-        color: #232323;
-    }
-    #navigationdark li:hover{
-        /*Textfarbe wird bestimmt, welche erscheint, wenn der Mauszeiger auf dem Text ist*/
-        background-color: grey;
-    }
-    #navigation input{
+    #navigation input {
         display: block;
         width: 40px;
         height: 32px;
@@ -548,242 +597,197 @@ table, th,td {
         top: -7px;
         left: -5px;
         cursor: pointer;
-        opacity: 0; 
-        z-index: 2; 
+        opacity: 0;
+        z-index: 2;
         -webkit-touch-callout: none;
     }
-    #navigationdark input{
-        display: block;
-        width: 40px;
-        height: 32px;
-        position: absolute;
-        top: -7px;
-        left: -5px;
-        cursor: pointer;
-        opacity: 0; 
-        z-index: 2; 
-        -webkit-touch-callout: none;
-    }
-    #navigation span{
+    #navigation span {
         /*Die drei Hamburgerstriche werden erstellt*/
         display: block;
         width: 33px;
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        
-        background: black;                                      
+        background: black;
         border-radius: 3px;
-        
         z-index: 1;
-        
         transform-origin: 4px 0px;
-        
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
     }
-    #navigationdark span{
-        /*Die drei Hamburgerstriche werden erstellt*/
-        display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;
-        
-        background: white;                                     
-        border-radius: 3px;
-        
-        z-index: 1;
-        
-        transform-origin: 4px 0px;
-        
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
-    }
-    #navigation span:first-child{
+    #navigation span:first-child {
         transform-origin: 0% 0%;
     }
-    #navigation span:nth-last-child(2){
+    #navigation span:nth-last-child(2) {
         transform-origin: 0% 100%;
     }
-    #navigation input:checked ~ span{
+    #navigation input:checked~span {
         /*Wenn man drauf klickt rotieren der Strich*/
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
         background: black;
     }
-    #navigationdark span:first-child{
-        transform-origin: 0% 0%;
-    }
-    #navigationdark span:nth-last-child(2){
-        transform-origin: 0% 100%;
-    }
-    #navigationdark input:checked ~ span{
-        /*Wenn man drauf klickt rotieren der Strich*/
-        opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background: black;
-    }
-    #navigation input:checked ~ span:nth-last-child(3){
+    #navigation input:checked~span:nth-last-child(3) {
         /*Wird unsichtbar, wenn man drauf klickt*/
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
-    #navigation input:checked ~ span:nth-last-child(2){
+    #navigation input:checked~span:nth-last-child(2) {
         /*Wenn man drauf klickt rotieren der Strich*/
         transform: rotate(-45deg) translate(0, -1px);
     }
-    #navigationdark input:checked ~ span:nth-last-child(3){
-        /*Wird unsichtbar, wenn man drauf klickt*/
-        opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
-    }
-    #navigationdark input:checked ~ span:nth-last-child(2){
-        /*Wenn man drauf klickt rotieren der Strich*/
-        transform: rotate(-45deg) translate(0, -1px);
-    }
-    #nav-inhalt{
+    #nav-inhalt {
         /*Box welche erscheint wird designt*/
         position: absolute;
         width: 250px;
         margin: -100px 0 0 -10px;
         padding: 30px;
         padding-top: 100px;
-        
-        background: lightblue;                                      
+        background: lightblue;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
-        
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
-        
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
-    #nav-inhalt > li{
+    #nav-inhalt>li {
         padding: 10px 0;
         font-size: 22px;
     }
-
     .submenu li {
         font-size: 12pt;
     }
-
-    #navigation input:checked ~ ul{
+    #navigation input:checked~ul {
         transform: none;
     }
-    #navigationdark input:checked ~ ul{
-        transform: none;
-    }
-    h1{
+    h1 {
         font-size: 27px;
     }
-    .text-header{
+    .text-header {
         padding-top: 30px;
         font-size: 14px;
         margin-left: 20px;
     }
-    .weberhaus-logo{
+    .weberhaus-logo {
         height: 100px;
         max-width: 99%;
         margin-right: 30px;
         padding-top: 40px;
     }
     /*Logogrösse wird verändert*/
-
-/* ---------------------------------------------------Hamburger-Ende-----------------------------------------------------------*/
+    /* ---------------------------------------------------Hamburger-Ende-----------------------------------------------------------*/
 }
+
+
 /* Bei einer Bildschirmbreite von maximal 376px werden folgende Änderungen getätigt */
-@media screen and (max-width: 376px){
-    h1{
+
+@media screen and (max-width: 376px) {
+    h1 {
         font-size: 20px;
     }
-    .title-080{
+    .title-080 {
         text-align: center;
     }
-    .generation-type, .citylife-type{
+    .generation-type,
+    .citylife-type {
         margin: auto;
         width: 100%;
         height: 100px;
     }
-    .generation_text, .citylife_text{
+    .generation_text,
+    .citylife_text {
         margin-right: 25%;
         text-align: center;
     }
-    .content_generation, .content_citylife{
+    .content_generation,
+    .content_citylife {
         text-align: center;
     }
-    .sd-100plan2{
+    .sd-100plan2 {
         padding-top: 15px;
     }
-    .sd-100-2geschossplan1{
+    .sd-100-2geschossplan1 {
         width: 70%;
         margin-right: 2%;
     }
-    .sd-100-2geschossplan2{
+    .sd-100-2geschossplan2 {
         width: 70%;
         padding-top: 10px;
     }
-    .sd-300-plan2{
+    .sd-300-plan2 {
         padding-top: 10px;
     }
-    .citylife300-plan3, .citylife600-plan3, .citylife700-plan3 {
+    .citylife300-plan3,
+    .citylife600-plan3,
+    .citylife700-plan3 {
         padding-top: 5px;
         width: 60%;
         margin-right: 20%;
     }
-    .citylife_teil1{
+    .citylife_teil1 {
         height: 150px;
     }
-    .text-header{
+    .text-header {
         padding-top: 30px;
         font-size: 10px;
         margin-left: 20px;
     }
-     /*Logogrösse wird verändert*/
-     .didipe-logo{
+    /*Logogrösse wird verändert*/
+    .didipe-logo {
         height: 60px;
         padding-top: 40px;
     }
-    .didipe-header{
+    .didipe-header {
         width: 100px;
     }
-    .weberhaus-logo{
+    .weberhaus-logo {
         margin-left: -5px;
         width: 100px;
     }
-    .haus-text{
+    .haus-text {
         font-size: 12px;
     }
-    .anforderung{
+    .anforderung {
         margin-left: -10px;
     }
     .container {
         width: 100%;
         height: 100%;
-        display: flex; /* Flexible Box für responsive Webdesigne wird erstellt */
-        flex-direction: column; /* Flex-Direction = Horizontal */
+        display: flex;
+        /* Flexible Box für responsive Webdesigne wird erstellt */
+        flex-direction: column;
+        /* Flex-Direction = Horizontal */
     }
     /*Bilder werden bei 300 px Bildschirmbreite untereinander angeordnet*/
-    .villa-1, .villa-3, .villa-2, .villa-5, .f-architektur-1, .f-architektur-3, .f-architektur-5, .f-architektur-2, .f-architektur-6, .f-architektur-4{
+    .villa-1,
+    .villa-3,
+    .villa-2,
+    .villa-5,
+    .f-architektur-1,
+    .f-architektur-3,
+    .f-architektur-5,
+    .f-architektur-2,
+    .f-architektur-6,
+    .f-architektur-4 {
         display: block;
         margin-right: 1px;
         width: 100%;
-        float: left; /* Das Element wird links angeordnet */
+        float: left;
+        /* Das Element wird links angeordnet */
     }
-    .villa-4{
-        max-width: 100%; 
+    .villa-4 {
+        max-width: 100%;
         width: 100%;
         margin-right: 1px;
         margin-left: 1px;
-        float: left; /* Das Element wird links angeordnet */
+        float: left;
+        /* Das Element wird links angeordnet */
     }
     /* ---------------------------------------------------Hamburger-Anfang-----------------------------------------------------------*/
-    #navigation{
+    #navigation {
         display: block;
-        float: left; /* Das Element wird links angeordnet */
-    /*Position wird fixiert*/
+        float: left;
+        /* Das Element wird links angeordnet */
+        /*Position wird fixiert*/
         position: absolute;
         left: 10px;
         top: 10px;
@@ -796,71 +800,46 @@ table, th,td {
         -webkit-user-select: none;
         user-select: none;
     }
-    #navigationdark{
-        display: block;
-        float: left; /* Das Element wird links angeordnet */
-    /*Position wird fixiert*/
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        background-color: transparent;
-        /*Background wird auf weiss gestellt*/
-        /*background-color: white;*/
-        /*Hellblauebox wird ein bisschen transparent*/
-        opacity: 0.95;
-        z-index: 1;
-        -webkit-user-select: none;
-        user-select: none;
-    }
-
     .submenu {
-        margin: 0;  
+        margin: 0;
         padding: 0;
         font-size: 12pt;
     }
     .submenu li {
         width: 200px!important;
-        height: 38px!important; /* height und line-height gleich: Schrift horizontal zentriert */
+        height: 38px!important;
+        /* height und line-height gleich: Schrift horizontal zentriert */
         line-height: 38px!important;
     }
-    .aktuellescitylife{
+    .aktuellescitylife {
         margin: auto;
         width: 60%;
     }
-    .content-aktuelles{
+    .content-aktuelles {
         margin-left: 0 !important;
         text-align: center;
     }
     #dd-cnt {
         display: none;
     }
-    #navigation a{
+    #navigation a {
         text-decoration: none;
         color: #232323;
     }
     #navigation li {
-        list-style: none; /*Keine Symbole bei der Aufzählung*/
+        list-style: none;
+        /*Keine Symbole bei der Aufzählung*/
         padding-left: 20px;
         width: 200px;
-        height: 40px; /* height und line-height gleich: Schrift horizontal zentriert */
+        height: 40px;
+        /* height und line-height gleich: Schrift horizontal zentriert */
         line-height: 40px;
     }
-    #navigationdark a{
-        text-decoration: none;
-        color: #232323;
-    }
-    #navigationdark li {
-        list-style: none; /*Keine Symbole bei der Aufzählung*/
-        padding-left: 20px;
-        width: 200px;
-        height: 40px; /* height und line-height gleich: Schrift horizontal zentriert */
-        line-height: 40px;
-    }
-    #navigation li:hover{
+    #navigation li:hover {
         /*Textfarbe wird bestimmt, welche erscheint, wenn der Mauszeiger auf dem Text ist*/
         background-color: gray;
     }
-    #navigation input{
+    #navigation input {
         display: block;
         width: 40px;
         height: 32px;
@@ -868,364 +847,398 @@ table, th,td {
         top: -7px;
         left: -5px;
         cursor: pointer;
-        opacity: 0; 
-        z-index: 2; 
+        opacity: 0;
+        z-index: 2;
         -webkit-touch-callout: none;
     }
-    #navigationdark li:hover{
-        /*Textfarbe wird bestimmt, welche erscheint, wenn der Mauszeiger auf dem Text ist*/
-        background-color: darkslategray;
-    }
-    #navigationdark input{
-        display: block;
-        width: 40px;
-        height: 32px;
-        position: absolute;
-        top: -7px;
-        left: -5px;
-        cursor: pointer;
-        opacity: 0; 
-        z-index: 2; 
-        -webkit-touch-callout: none;
-    }
-    #navigation span{
+    #navigation span {
         /*Die drei Hamburgerstriche werden erstellt*/
         display: block;
         width: 33px;
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        
-        background: black;                                      
+        background: black;
         border-radius: 3px;
-        
         z-index: 1;
-        
         transform-origin: 4px 0px;
-        
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
     }
-    #navigationdark span{
-        /*Die drei Hamburgerstriche werden erstellt*/
-        display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;
-        
-        background: black;                                      
-        border-radius: 3px;
-        
-        z-index: 1;
-        
-        transform-origin: 4px 0px;
-        
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
-    }
-    #navigation span:first-child{
+    #navigation span:first-child {
         transform-origin: 0% 0%;
     }
-    #navigation span:nth-last-child(2){
+    #navigation span:nth-last-child(2) {
         transform-origin: 0% 100%;
     }
-    #navigation input:checked ~ span{
+    #navigation input:checked~span {
         /*Wenn man drauf klickt rotieren der Strich*/
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
         background: black;
     }
-    #navigationdark span:first-child{
-        transform-origin: 0% 0%;
-    }
-    #navigationdark span:nth-last-child(2){
-        transform-origin: 0% 100%;
-    }
-    #navigationdark input:checked ~ span{
-        /*Wenn man drauf klickt rotieren der Strich*/
-        opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background: black;
-    }
-    #navigation input:checked ~ span:nth-last-child(3){
+    #navigation input:checked~span:nth-last-child(3) {
         /*Wird unsichtbar, wenn man drauf klickt*/
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
-    #navigation input:checked ~ span:nth-last-child(2){
+    #navigation input:checked~span:nth-last-child(2) {
         /*Wenn man drauf klickt rotieren der Strich*/
         transform: rotate(-45deg) translate(0, -1px);
     }
-    #navigationdark input:checked ~ span:nth-last-child(3){
-        /*Wird unsichtbar, wenn man drauf klickt*/
-        opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
-    }
-    #navigationdark input:checked ~ span:nth-last-child(2){
-        /*Wenn man drauf klickt rotieren der Strich*/
-        transform: rotate(-45deg) translate(0, -1px);
-    }
-    #nav-inhalt{
+    #nav-inhalt {
         /*Box welche erscheint wird designt*/
         position: absolute;
         width: 250px;
         margin: -100px 0 0 -10px;
         padding: 30px;
         padding-top: 100px;
-        
-        background: lightblue;                                      
+        background: lightblue;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
-        
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
-        
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
-    #nav-inhalt > li{
+    #nav-inhalt>li {
         padding: 10px 0;
         font-size: 22px;
     }
-    #navigation input:checked ~ ul{
-        transform: none;
-    }
-    #navigationdark input:checked ~ ul{
+    #navigation input:checked~ul {
         transform: none;
     }
     /* ---------------------------------------------------Hamburger-Ende-----------------------------------------------------------*/
 }
-.glatthaar{
-    max-width: 50%; 
-    float: right; /* Der Inhalt ordnet sich rechts an */
+
+.glatthaar {
+    max-width: 50%;
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
     padding-top: 50px;
 }
-.glatthaar-logo{
+
+.glatthaar-logo {
     width: 70%;
     margin-left: 25%;
 }
-.glatthaar-pic2{
-    max-width: 50%; 
-    display: inline-block; /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
+
+.glatthaar-pic2 {
+    max-width: 50%;
+    display: inline-block;
+    /* Inline-Box wird erzeugt, welche die gesamte Breite des verfügbaren Bereichs einnimmt */
 }
-.glatthaar_fertigkeller{
+
+.glatthaar_fertigkeller {
     width: 110%;
-    float: left; /* Der Inhalt ordnet sich links an */
+    float: left;
+    /* Der Inhalt ordnet sich links an */
     margin-left: 5%;
     padding-top: 20px;
 }
-.glatthaar_vergleich, .glatthaar-pic3{
+
+.glatthaar_vergleich,
+.glatthaar-pic3 {
     width: 90%;
     padding-top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
-.untertitel-generation{
+
+.untertitel-generation {
     text-decoration: underline;
 }
-.content_generation, .content_citylife{
+
+.content_generation,
+.content_citylife {
     width: 100%;
     margin-left: 1%;
     margin-right: 1%;
     padding-top: 50px;
     padding-bottom: 100px;
 }
-.generation_teil1, .citylife_teil1{
+
+.generation_teil1,
+.citylife_teil1 {
     width: 100%;
 }
-.generation_teil2, .citylife_teil2{
+
+.generation_teil2,
+.citylife_teil2 {
     width: 100%;
     padding-top: 30px;
 }
-.generation-type, .citylife-type{
+
+.generation-type,
+.citylife-type {
     width: 45%;
     display: inline-block;
     margin-left: 1%;
 }
-.generation_text, .citylife_text{
+
+.generation_text,
+.citylife_text {
     width: 49%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
-    line-height: 200%; /* Der Zeilenabstand */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
+    line-height: 200%;
+    /* Der Zeilenabstand */
     padding-top: 20px;
 }
-._80plan1{
+
+._80plan1 {
     width: 49%;
     margin-right: 2%;
 }
-._80plan2{
+
+._80plan2 {
     width: 49%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
 }
-.balance400{
+
+.balance400 {
     width: 49%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
     padding-top: 10px;
 }
-.sd-100plan1{
+
+.sd-100plan1 {
     width: 49%;
     margin-right: 2%;
     padding-top: 20px;
 }
-.sd-100plan2{
+
+.sd-100plan2 {
     width: 49%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
 }
-.fd-100-plan1{
+
+.fd-100-plan1 {
     width: 48%;
     margin-right: 2%;
     padding-top: 20px;
 }
-.fd-100-plan2{
+
+.fd-100-plan2 {
     width: 50%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
     padding-top: 12px;
 }
-.sd-200-plan1{
+
+.sd-200-plan1 {
     width: 49%;
     margin-right: 2%;
 }
-.sd-200-plan2{
+
+.sd-200-plan2 {
     width: 49%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
 }
-.sd-200-2geschossplan1{
-    width: 49%;
-    margin-right: 2%;
-}
-.sd-200-2geschossplan2{
-    width: 49%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
-}
-.sd-300-plan1{
+
+.sd-200-2geschossplan1 {
     width: 49%;
     margin-right: 2%;
-    padding-top: 15px;
 }
-.sd-300-plan2{
+
+.sd-200-2geschossplan2 {
     width: 49%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
 }
-.fd-300-plan1{
+
+.sd-300-plan1 {
     width: 49%;
     margin-right: 2%;
     padding-top: 15px;
 }
-.fd-300-plan2{
+
+.sd-300-plan2 {
     width: 49%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
 }
-.sd2-300-plan1{
+
+.fd-300-plan1 {
+    width: 49%;
+    margin-right: 2%;
+    padding-top: 15px;
+}
+
+.fd-300-plan2 {
+    width: 49%;
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
+}
+
+.sd2-300-plan1 {
     width: 49%;
     margin-right: 2%;
 }
-.sd2-300-plan2{
+
+.sd2-300-plan2 {
     width: 49%;
-    float: right; /* Der Inhalt ordnet sich rechts an */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
 }
-.citylife300-plan1{
+
+.citylife300-plan1 {
     width: 100%;
 }
-.citylife300-plan2{
+
+.citylife300-plan2 {
     width: 100%;
 }
-.citylife300-plan3{
+
+.citylife300-plan3 {
     padding-top: 5px;
     width: 60%;
     margin-left: 18%;
 }
-.citylife600-plan1{
+
+.citylife600-plan1 {
     width: 110%;
     padding-top: 23%;
 }
-.citylife600-plan2{
+
+.citylife600-plan2 {
     width: 100%;
 }
-.citylife600-plan3{
+
+.citylife600-plan3 {
     padding-top: 5px;
     width: 60%;
     margin-left: 18%;
 }
-.citylife700-plan1{
+
+.citylife700-plan1 {
     width: 90%;
     padding-top: 5%;
 }
-.citylife700-plan2{
+
+.citylife700-plan2 {
     width: 100%;
 }
-.citylife700-plan3{
+
+.citylife700-plan3 {
     padding-top: 5px;
     width: 60%;
     margin-left: 18%;
 }
-.content-plan1{
+
+.content-plan1 {
     width: 47%;
-    height: fit-content; /* Die Höhe passt sich dem Inhalt an */
-    float: left; /* Der Inhalt ordnet sich links an */
+    height: fit-content;
+    /* Die Höhe passt sich dem Inhalt an */
+    float: left;
+    /* Der Inhalt ordnet sich links an */
 }
-.content-plan2{
+
+.content-plan2 {
     width: 51%;
-    height: fit-content; /* Die Höhe passt sich dem Inhalt an */
-    float: right; /* Der Inhalt ordnet sich rechts an */
+    height: fit-content;
+    /* Die Höhe passt sich dem Inhalt an */
+    float: right;
+    /* Der Inhalt ordnet sich rechts an */
 }
-.content-plan3{
+
+.content-plan3 {
     width: 100%;
-    height: fit-content; /* Die Höhe passt sich dem Inhalt an */
+    height: fit-content;
+    /* Die Höhe passt sich dem Inhalt an */
 }
-.untertitle-links{
-    width: 100%;
-    text-align: center;
-}
-.untertitle-rechts{
-    width: 100%;
-    text-align: center;
-}
-.untertitle-mitte{
+
+.untertitle-links {
     width: 100%;
     text-align: center;
 }
-.title-080, .title-100sd, .title-100-2gesch-sd, .title-100-fd, .title-200-sd, .title-200-fd, .title-200-2gesch-sd, .title-300-sd, .title-300-sd2, .title-600-sd, .title-700-sd{
-    text-decoration: underline; /* Unterstrichen */
+
+.untertitle-rechts {
+    width: 100%;
+    text-align: center;
+}
+
+.untertitle-mitte {
+    width: 100%;
+    text-align: center;
+}
+
+.title-080,
+.title-100sd,
+.title-100-2gesch-sd,
+.title-100-fd,
+.title-200-sd,
+.title-200-fd,
+.title-200-2gesch-sd,
+.title-300-sd,
+.title-300-sd2,
+.title-600-sd,
+.title-700-sd {
+    text-decoration: underline;
+    /* Unterstrichen */
     margin-left: 1%;
 }
-.trennlinie{
-    border-style: solid; /* Rahmenlinie ist ununterbrochene Linie */
-    border-width: 5px; /* Rahmendicke */
+
+.trennlinie {
+    border-style: solid;
+    /* Rahmenlinie ist ununterbrochene Linie */
+    border-width: 5px;
+    /* Rahmendicke */
 }
+
 .submenu {
-    margin: 0;  
+    margin: 0;
     padding: 0;
-    font-size: 12pt; /* Schriftgrösse */
+    font-size: 12pt;
+    /* Schriftgrösse */
 }
+
 .submenu li {
     width: 200px!important;
-    height: 38px!important; /* height und line-height gleich: Schrift horizontal zentriert */
+    height: 38px!important;
+    /* height und line-height gleich: Schrift horizontal zentriert */
     line-height: 38px!important;
 }
-.subtitle-sunshine{
+
+.subtitle-sunshine {
     text-align: center;
 }
-.link{
+
+.link {
     text-align: center;
 }
-.aktuellescitylife, .bildaktuelles{
-    display: flex; 
-    justify-content: center; 
+
+.aktuellescitylife,
+.bildaktuelles {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.content-aktuelles{
+
+.content-aktuelles {
     margin-left: 17%;
 }
-.content2-aktuelles{
+
+.content2-aktuelles {
     text-align: center;
 }
-.darkmode-button{
-    margin-left: 40px;
-    background-color: white;
+
+.darkmode-button {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #00CED1;
 }
-.list-actuell{
+
+.list-actuell {
     list-style: none;
+}
+
+.back-to-top-button {
+    padding: 5px;
+    background-color: azure;
+    margin: s;
 }

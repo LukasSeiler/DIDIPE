@@ -61,7 +61,9 @@
             <img src="./bilder/formatiert/mylife/400-mylife-eg.jpg" class="_80plan1" alt="Hausplan mylife 400">
         </div>
     </div>
-
+    <button class="back-to-top-button" id="back-to-top">
+        Zurück nach oben
+    </button>
     <!--Javascript-->
     <script>
         function ddaction() {
@@ -74,7 +76,31 @@
                 ddcnt.style.display = "block";
             }
         }
+    </script>
+    <script>
+        (function($) {
 
+            /*--Scroll Back to Top Button Show--*/
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+
+            //Click event scroll to top button jquery
+
+            $('#back-to-top').click(function() {
+
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+
+        })(jQuery);
     </script>
 </body>
 
