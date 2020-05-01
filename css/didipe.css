@@ -110,6 +110,7 @@ body {
     list-style: none;
     /*Keine Symbole bei der Aufzählung*/
     padding-left: 20px;
+    margin-right: 20px;
     width: 200px;
     height: 60px;
     /* height und line-height gleich: Schrift horizontal zentriert */
