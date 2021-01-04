@@ -25,7 +25,7 @@ Contains all the pictures for this website. Most of the pictures were edited by 
 Downloads-folder:
 
 ```
-Contains all PDF-Files which can be downloaded from the website.
+Contains all the PDF-Files which can be downloaded from the website.
 ```
 
 ## REST API's
